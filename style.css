@@ -678,3 +678,12 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+.courses .types-cources i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.courses .types-cources:hover i{
+    color: #fff;
+}

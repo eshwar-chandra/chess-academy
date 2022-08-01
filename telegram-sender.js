@@ -1,14 +1,14 @@
 //bot token
 var telegram_bot_id = "5483364145:AAH1wQaF39YVmrvMrgFATSaax58dsZB5x1Y";
 //chat id
-var chat_id = 743640880;
+var chat_id = -580002634;
 var u_name, email, phone, details, message;
 var ready = function () {
     u_name = document.getElementById("name").value;
     email = document.getElementById("email").value;
     phone = document.getElementById("phone").value;
     details = document.getElementById("details").value;
-    message = "Name: " + u_name + "\nEmail: " + email + "\nphone: " + phone + "\nStudent Details" + details;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nphone: " + phone + "\nStudent Details: " + details;
 };
 var sender = function () {
     ready();
@@ -31,7 +31,7 @@ var sender = function () {
     });
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+    document.getElementById("phone").value = "";
     document.getElementById("details").value = "";
     alert("Our team will get in touch with You. \nThank You")
     return false;
