@@ -71,3 +71,16 @@ $(document).ready(function(){
         }
     });
 });
+
+var isvalidPhNo = function () {
+    var phone = document.getElementById("phone").value;
+    document.getElementById("phone").value = phone.replace(/[^\d]/g, '');
+}
+
+var fname = document.getElementById("phone");
+fname.addEventListener("change", () => {
+  if (fname.validity.patternMismatch) {
+    fname.setCustomValidity("please check your phone Number.");
+    fname.reportValidity();
+  } else { fname.setCustomValidity(""); }
+});
