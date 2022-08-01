@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .cources, .vision, .teams, .register, footer{
+.about, .courses, .vision, .teams, .register, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.cources .serv-content,
+.courses .serv-content,
 .vision .vision-content,
 .register .register-content{
     display: flex;
@@ -257,21 +257,21 @@ section .title::after{
     background: none;
 }
 
-/* cources section styling */
-.cources, .teams{
+/* courses section styling */
+.courses, .teams{
     color:#fff;
     background: #111;
 }
-.cources .title::before,
+.courses .title::before,
 .teams .title::before{
     background: #fff;
 }
-.cources .title::after,
+.courses .title::after,
 .teams .title::after{
     background: #111;
     content: "what we provide";
 }
-.cources .serv-content .card{
+.courses .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -280,24 +280,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.cources .serv-content .card:hover{
+.courses .serv-content .card:hover{
     background: crimson;
 }
-.cources .serv-content .card .box{
+.courses .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.cources .serv-content .card:hover .box{
+.courses .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.cources .serv-content .card i{
+.courses .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.cources .serv-content .card:hover i{
+.courses .serv-content .card:hover i{
     color: #fff;
 }
-.cources .serv-content .card .text{
+.courses .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -619,7 +619,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .cources .serv-content .card{
+    .courses .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -643,7 +643,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .cources .serv-content .card{
+    .courses .serv-content .card{
         width: 100%;
     }
 }
