@@ -306,7 +306,7 @@ section .title::after{
 /* vision section styling */
 
 .vision .title::after{
-    content: "what i know";
+    content: "Where we aim";
 }
 .vision .vision-content .column{
     width: calc(50% - 30px);
