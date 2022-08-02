@@ -306,7 +306,7 @@ section .title::after{
 /* vision section styling */
 
 .vision .title::after{
-    content: "what i know";
+    content: "Where we aim";
 }
 .vision .vision-content .column{
     width: calc(50% - 30px);
@@ -677,4 +677,13 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+.courses .types-cources i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.courses .types-cources:hover i{
+    color: #fff;
 }
