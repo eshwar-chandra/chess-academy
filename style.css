@@ -77,6 +77,36 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+section .sub-title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .sub-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .sub-title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -686,4 +716,12 @@ footer span a:hover{
 }
 .courses .types-cources:hover i{
     color: #fff;
+}
+
+.courses .sub-title::before{
+    background: #fff;
+}
+.courses .sub-title::after{
+    background: #111;
+    /* content: "what we provide"; */
 }
