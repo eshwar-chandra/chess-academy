@@ -1,0 +1,29 @@
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add some space between gallery items */
+}
+
+.gallery-item {
+  width: 300px; /* Set a fixed width for each gallery item */
+  border: 1px solid #ddd; /* Add a light border */
+  border-radius: 6px; /* Rounded corners */
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px; /* Space below each item */
+  background-color: #f9f9f9; /* Light background for each item */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Slightly rounded corners for images */
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  font-size: 14px;
+  color: #333;
+}
