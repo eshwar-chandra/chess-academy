@@ -14,3 +14,12 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+/* Dynamic coloring for trail pieces */
+.chess-trail-piece.trail-piece-black {
+    color: black; /* SVG will use this for fill due to fill="currentColor" */
+}
+
+.chess-trail-piece.trail-piece-red {
+    color: crimson; /* SVG will use this for fill */
+}
