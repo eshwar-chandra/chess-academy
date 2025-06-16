@@ -309,6 +309,7 @@ section .sub-title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px; /* ADDED THIS */
 }
 .courses .serv-content .card:hover{
     background: crimson;
