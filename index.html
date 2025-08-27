@@ -18,9 +18,28 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="cursor-trail.css">
+    <link rel="stylesheet" href="fixed-social-buttons.css">
 </head>
 
 <body>
+    <div class="fixed-left-buttons">
+        <a href="https://api.whatsapp.com/send?phone=917892504742&text=Hi%20There!" class="social-btn whatsapp" aria-label="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://youtube.com/channel/UCvd9gtt6ftCnMDADV_1Sk5w" class="social-btn youtube" aria-label="YouTube" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/magicsquarechessacademy/" class="social-btn instagram" aria-label="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:magicsquareacademy64@gmail.com" class="social-btn mail" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/magicsquare-academy-b643b1246/" class="social-btn linkedin" aria-label="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -34,6 +53,7 @@
                 <li><a href="#vision" class="menu-btn">Vision</a></li>
                 <li><a href="#teams" class="menu-btn">Teams</a></li>
                 <li><a href="#register" class="menu-btn">Register</a></li>
+                <li><a href="gallery.html" class="menu-btn">Gallery</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -84,22 +104,22 @@
             <h2 class="title">Our courses</h2>
             <h2 class="sub-title">Variants</h2>
             <div class="serv-content">
-                <div class="card" style="border-radius: 50%;">
+                <div class="card variants-card">
                     <div class="box">
                         <i class="fa-solid fa-hourglass-end"></i>
                         <div class="text">60 mins</div>
                     </div>
                 </div>
-                <div class="card" style="border-radius: 50%;">
+                <div class="card variants-card">
                     <div class="box">
                         <i class="fa-solid fa-users"></i>
                         <div class="text">Group session</div>
                     </div>
                 </div>
-                <div class="card" style="border-radius: 50%;">
+                <div class="card variants-card">
                     <div class="box">
                         <i class="fa-solid fa-user"></i>
-                        <div class="text" style="border-radius:205px;">One on One</div>
+                        <div class="text">One on One</div>
                     </div>
                 </div>
             </div>
@@ -111,7 +131,7 @@
                         <div class="text">Beginner</div>
                         <p>Recommended for students with minimum to no knowledge of chess.<br> This covers Chess
                             fundamentals, Movement and all the
-                            basic concepts.<br>24 session<br><br><br></p>
+                            basic concepts.<br>24 session</p>
                     </div>
                 </div>
                 <div class="card">
@@ -119,7 +139,7 @@
                         <i class="fa-solid fa-chess-knight"></i>
                         <div class="text">Intermediate</div>
                         <p>Recommended for student who understand basic concepts, Movement of the pieces.<br> This
-                            covers topics like Tactical play and all the strategies of game<br>Over 6 months<br><br></p>
+                            covers topics like Tactical play and all the strategies of game<br>Over 6 months</p>
                     </div>
                 </div>
                 <div class="card">
@@ -211,8 +231,6 @@
                         <p>Silver medal holder in National Zonals, Currently representing Karnataka state in nationals
                             under police departments since 2019 with 20+ years Experience in chess. <br>Peak Rating -
                             1906</p>
-                        </p>
-                        <p><br></p>
                     </div>
                 </div>
                 <div class="card">
@@ -229,10 +247,6 @@
                         <img src="images/profile-4.png" alt="">
                         <div class="text">Damaruga</div>
                         <p>Grafic Designer <br> Designed magic-squar-logo ,brochure, poster etc</p>
-                        <p><br></p>
-                        <p><br></p>
-                        <p><br></p>
-                        <p><br></p>
                     </div>
                 </div>
                 <!-- <div class="card">
@@ -365,6 +379,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cursor-trail.js" defer></script>
 </body>
 
 </html>

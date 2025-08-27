@@ -1,0 +1,126 @@
+/* Gallery Section Styling */
+.gallery {
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+    /* Assuming a light background for the section, similar to 'about' or 'contact'
+       If a dark background like '.teams' or '.courses' is desired, add:
+       background: #111;
+       And adjust text colors within this section accordingly.
+    */
+}
+
+/* Gallery Title Styling */
+.gallery .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #111; /* Default to dark text for light background */
+}
+
+.gallery .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px; /* Adjusted from 0px to align with provided example */
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111; /* Default to dark line for light background */
+    transform: translateX(-50%);
+}
+
+.gallery .title::after {
+    content: "Our Students"; /* Subtitle for the gallery */
+    position: absolute;
+    bottom: -8px; /* Adjusted from -8px to align with provided example */
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px; /* Adjusted from 0 5px */
+    background: #fff; /* Default for light section background, change if gallery bg is dark */
+    transform: translateX(-50%);
+}
+
+/* Styling for dark background sections if .gallery were to be dark */
+/*
+.gallery.dark-bg { background: #111; }
+.gallery.dark-bg .title { color: #fff; }
+.gallery.dark-bg .title::before { background: #fff; }
+.gallery.dark-bg .title::after { background: #111; color: crimson; }
+*/
+
+/* Gallery Content Flexbox Layout */
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space, items flush to edges for full rows */
+    align-items: flex-start;
+    /* gap property is an alternative, but margin offers fine control with space-between */
+}
+
+/* Gallery Item Styling (Card-like) */
+.gallery-item {
+    background: #222; /* Dark background for cards */
+    color: #fff; /* Default text color on dark cards */
+    border-radius: 6px;
+    padding: 25px 35px; /* Padding like .teams .carousel .card */
+    text-align: center;
+    width: calc(33% - 20px); /* Adjusted for 3 items per row with some spacing, assuming container has padding */
+                               /* (100% / 3) - (gap * (items_per_row -1) / items_per_row) */
+                               /* For example, if using gap:30px, width: calc(33.333% - 20px); */
+                               /* Using margin for spacing, so width calculation is simpler: */
+    margin-bottom: 30px; /* Space below each card */
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+/* Adjust width for responsiveness, for example: */
+@media (max-width: 947px) { /* Matches breakpoint in style.css for teams/courses cards */
+    .gallery-item {
+        width: calc(50% - 15px); /* 2 items per row */
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 690px) { /* Matches breakpoint in style.css */
+    .gallery-item {
+        width: 100%; /* 1 item per row */
+        margin-bottom: 20px;
+    }
+}
+
+
+.gallery-item:hover {
+    background: crimson;
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    max-width: 100%; /* Ensure image is responsive within its container */
+    height: 200px;   /* Fixed height for image uniformity */
+    width: 200px;    /* Fixed width for image uniformity, creating a circle with border-radius 50% */
+    object-fit: cover; /* Ensures the image covers the area, may crop */
+    border-radius: 50%; /* Circular images */
+    border: 5px solid crimson;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover img {
+    border-color: #fff;
+}
+
+.gallery-item .gallery-item-name {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gallery-item p.gallery-item-description {
+    font-size: 14px;
+    color: #f0f0f0; /* Slightly off-white for better readability on dark */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}

@@ -1,0 +1,55 @@
+/* Fixed Social Media Buttons */
+.fixed-left-buttons {
+    position: fixed;
+    left: 15px; /* Adjust as needed for spacing from the edge */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9998; /* Below sticky navbar (999) and scroll-up (9999), but above most page content */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.fixed-left-buttons .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;  /* Button width */
+    height: 45px; /* Button height */
+    background-color: #222; /* Default background, can be overridden per button */
+    color: #fff; /* Icon color */
+    font-size: 20px; /* Icon size */
+    text-decoration: none;
+    border-radius: 50%; /* Circular buttons */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixed-left-buttons .social-btn:hover {
+    background-color: crimson; /* General hover effect */
+    color: #fff;
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Specific styles for each button (optional, if different colors are desired) */
+.fixed-left-buttons .social-btn.whatsapp:hover {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+.fixed-left-buttons .social-btn.youtube:hover {
+    background-color: #FF0000; /* YouTube red */
+}
+
+.fixed-left-buttons .social-btn.instagram:hover {
+    background: #d6249f; /* Instagram gradient start - simplified to one color */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); /* Instagram gradient */
+}
+
+.fixed-left-buttons .social-btn.mail:hover {
+    background-color: #c71610; /* A generic red for email, or match site's crimson */
+}
+
+.fixed-left-buttons .social-btn.linkedin:hover {
+    background-color: #0A66C2; /* LinkedIn blue */
+}

@@ -1,0 +1,25 @@
+/* Chess Cursor Trail Effect */
+.chess-trail-piece {
+    position: absolute;
+    pointer-events: none; /* So they don't interfere with mouse clicks on other elements */
+    opacity: 1;
+    width: 25px; /* Initial size of the chess piece image */
+    height: 25px; /* Initial size of the chess piece image */
+    z-index: 100000; /* Very high z-index to be on top of most things */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    /* Prevent images from being dragged */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Dynamic coloring for trail pieces */
+.chess-trail-piece.trail-piece-black {
+    color: black; /* SVG will use this for fill due to fill="currentColor" */
+}
+
+.chess-trail-piece.trail-piece-red {
+    color: crimson; /* SVG will use this for fill */
+}
